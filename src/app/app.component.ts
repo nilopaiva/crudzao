@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crudzao';
+
+  constructor(){
+    if(!localStorage.getItem("list"))
+      localStorage.setItem('list', '{"tasks":[{"title":"oi", "description":"uma maneira de falar bom dia rápido"}]}')
+  }
 }
