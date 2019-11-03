@@ -1,7 +1,2 @@
-<button (click)="addTask('teste', 'teste')">Criar Task Teste</button>
-<section class="tasks">
-    <div class="task" *ngFor="let task of tasks">
-        <h2 class="task-title">{{task.title}}</h2>
-        <p class="task-description">{{task.description}}</p>
-    </div>
-</section>
+<app-add-task></app-add-task>
+<app-list-task></app-list-task>

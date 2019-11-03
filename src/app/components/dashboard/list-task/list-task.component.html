@@ -1,1 +1,6 @@
-<p>list-task works!</p>
+<section class="tasks">
+    <div class="task" *ngFor="let task of tasks">
+        <h2 class="task-title">{{task.title}}</h2>
+        <p class="task-description">{{task.description}}</p>
+    </div>
+</section>
