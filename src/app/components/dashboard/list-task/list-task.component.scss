@@ -1,0 +1,11 @@
+.tasks{
+    display: grid;
+    grid-template: auto / 1fr;
+    row-gap: 10px;
+}
+
+.task {
+    max-width: 500px;
+    background-color: rgb(63, 63, 63);
+    color: rgb(192, 192, 192);
+}

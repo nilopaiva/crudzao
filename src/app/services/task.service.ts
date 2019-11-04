@@ -12,10 +12,12 @@ export class TaskService {
   constructor() { 
     
   }
+
   getTasks(){
    this.tasks = JSON.parse(localStorage.getItem("list")).tasks;
    this.task.next(this.tasks);
   }
+
   addTask(title, description){
     let task = {"title": title, "description": description}
     this.tasks = JSON.parse(localStorage.getItem("list")).tasks
